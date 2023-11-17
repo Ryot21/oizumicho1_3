@@ -1,0 +1,211 @@
+// フッター
+.c-footer{
+	width: 100vw;
+	height: auto;
+	margin-bottom: 25%;
+	@include min(768){
+		margin-bottom: 5%;
+	}
+	&-wrapper{
+		align-items: center;
+		width: 76%;
+		margin: auto;
+		height: auto;
+		// background: #bfbebe2e;
+		@include min(768){
+			width: 85%;
+			max-width: 1100px;
+		}
+		@include min(1600){
+			width: 57.4%;
+		}
+		&.-v02{
+			@include max(768){
+				width: 90%;
+			}
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			width: 100vw;
+			height: 1px;
+			background: $main-color--b;
+		}
+	}
+	&__contactArea{
+		.c-footer__contactLists{
+			position: relative;
+			display: flex;
+			flex-wrap: nowrap;
+			&::before{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100vw;
+				height: 1px;
+				background: $main-color--b;
+			}
+			&::after{
+				content: "";
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+				width: 100vw;
+				height: 1px;
+				background: $main-color--b;
+			}
+			li{
+				position: relative;
+				width: calc(100%/2);
+				height: auto;
+				padding: 5% 0;
+				@include min(768){
+					width: calc(100%/4);
+				}
+				&:first-child{
+					&::before{
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+						height: 100%;
+						width: 1px;
+						background: $main-color--b;
+					}
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translateY(-50%);
+					height: 100%;
+					width: 1px;
+					background: $main-color--b;
+				}
+				a{
+					display: block;
+				}
+			}
+		}
+	}
+	&__navArea{
+		.c-footer__navLists{
+			display: flex;
+			flex-wrap: nowrap;
+			@include max(768){
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			li{
+				position: relative;
+				width: calc(100%/4);
+				height: auto;
+				padding: 2.1% 0;
+				@include min(768){
+					width: calc(100%/8);
+				}
+				&:first-child{
+					&::before{
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+						height: 80%;
+						width: 1px;
+						background: $main-color--b;
+						@include min(768){
+							height: 40%;
+						}
+					}
+				}
+				&:nth-child(5){
+					@include max(768){
+						&::before{
+							content: "";
+							position: absolute;
+							top: 50%;
+							left: 0;
+							transform: translateY(-50%);
+							height: 80%;
+							width: 1px;
+							background: $main-color--b;
+						}
+					}
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translateY(-50%);
+					height: 80%;
+					width: 1px;
+					background: $main-color--b;
+					@include min(768){
+						height: 40%;
+					}
+				}
+				a{
+					display: block;
+				}
+			}
+		}
+	}
+	&__btnArea{
+		width: 75%;
+		margin: auto;
+		@include min(768){
+			width: 30%;
+			max-width: 480px;
+		}
+		a{
+			display: block;
+			background: $main-color--w;
+			border: 1px solid $main-color--b;
+			padding: 5% 0;
+		}
+	}
+	&__shopArea{
+		width: 60%;
+		margin: auto;
+		@include min(768){
+			width: 50%;
+			max-width: 1000px;
+		}
+		.c-footer__shopFlex{
+			display: flex;
+			flex-wrap: wrap;
+			@include min(768){
+				flex-wrap: nowrap;
+				justify-content: center;
+			}
+			li{
+				width: 100%;
+				&:nth-child(1){
+					@include max(768){
+						padding: 0 5%;
+						margin-bottom: 5%;
+					}
+					@include min(768){
+						width: 40%;
+					}
+				}
+				&:nth-child(2){
+					@include min(768){
+						width: 60%;
+						padding-left: 5%;
+					}
+				}
+			}
+		}
+	}
+}

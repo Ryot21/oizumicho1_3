@@ -1,0 +1,165 @@
+// コンテンツ
+.c-container{
+	width: 100vw;
+	height: auto;
+}
+
+.c-contents{
+	position: relative;
+	.imgBox{ 
+		&.-sp{
+			@include max(768){
+				width: 100vw;
+				height: 710px;
+			}
+		}
+	}
+	&.-f-view{// ファーストビュー
+		.c-contentsBox{// 背景要素内 > 設置場所
+			// 背景
+			&.-f-gallery{
+				// *padding:0 15px;/*ギャラリー左右に余白をつける*/
+				@include min(768){
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+					columns: 5;/*段組みの数*/
+				}
+				&._row01{
+					@include max(768){
+						position: absolute;
+						top: 0%;
+						left: 50%;
+						transform: translateX(-50%);
+						width: 100%;
+						columns: 3;/*段組みの数*/
+					}
+				}
+				&._row02{
+					@include max(768){
+						position: absolute;
+						top: auto;
+						bottom: 0%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 100%;
+						columns: 2;/*段組みの数*/
+					}
+				}
+			}
+			// 要素
+			.galleryItem{
+				margin-bottom: 20px;/*各画像下に余白をつける*/
+				img{
+					width:100%;
+					height:auto;
+					vertical-align: bottom;/*画像の下にできる余白を削除*/
+				}
+				a{
+					&:hover,
+					&:active{
+						text-decoration: none;
+					}
+				}
+			}
+			// タイトル
+			&.-f-title{
+				position: absolute;
+				top: 32%;
+				left: 48%;
+				transform: translate(-50%, -50%);
+				width: 82%;
+				@include min(768){
+					position: absolute;
+					top: 65%;
+					left: 30%;
+					width: 40%;
+				}
+			}
+			// サブタイトル
+			&.-f-subtitle{
+				position: absolute;
+				// top: 35%;
+				// left: 50%;
+				transform: translate(-50%, -50%);
+				// width: 75%;
+
+				@include min(768){
+					top: 18%;
+					left: 75%;
+					width: 26%;
+				}
+			}
+			// description
+			&.-f-des{
+				position: absolute;
+				top: 37.5%;
+				left: 48%;
+				transform: translate(-50%, -50%);
+				width: 69%;
+				@include min(768){
+					top: 75%;
+					left: 28%;
+					width: 30%;
+				}
+			}
+
+			&.-f-item{// 表示要素の横幅を設定
+				@include min(768){
+					width: 100% / 5;
+					height: auto;
+				}
+				// オリジナルの設定
+				&.-f-item01{
+
+				}
+				&.-f-item02{
+
+				}
+				&.-f-item03{
+
+				}
+				&.-f-item04{
+
+				}
+				&.-f-item05{
+
+				}
+			}
+		}
+	}
+	&.-slider{//カルーセル
+
+	}
+	&.-imgBg{//背景画像
+		.c-contentsBox{//背景要素内 > 設置場所
+			position: relative;
+			
+		}
+	}
+
+
+	// 横幅
+	&.logoArea{
+		margin: auto;
+		width: 20%;
+		@include min(768){
+			width: 10%;
+		}
+		@include min(1600){
+			width: 7%;
+		}
+	}
+	&.w1100{
+		margin: auto;
+		@include min(768){
+			width: 85%;
+			max-width: 1100px;
+		}
+		@include min(1600){
+			width: 57.4%;
+		}
+	}
+}

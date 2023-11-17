@@ -1,0 +1,34 @@
+@keyframes flipLeft{
+    from {
+     transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+    opacity: 0;
+    }
+  
+    to {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+    }
+  }
+
+  .flipLeft{
+    animation-name: flipLeft;
+    animation-fill-mode:forwards;
+    perspective-origin: left center;
+    opacity: 0;
+
+    &.-item01{
+        animation-duration:0.5s;
+    }
+    &.-item02{
+        animation-duration:0.75s;
+    }
+    &.-item03{
+        animation-duration:1.25s;
+    }
+    &.-item04{
+        animation-duration:1.75s;
+    }
+    &.-item05{
+        animation-duration:2.25s;
+    }
+  }

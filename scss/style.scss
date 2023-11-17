@@ -1,0 +1,41 @@
+// Sass Document
+@charset "UTF-8";
+// 基本設定
+@import "./setting/reset";      // リセットCSS
+@import "./setting/color";      // カラー変数
+@import "./setting/structure";  // レスポンシブ変数
+@import "./setting/typography"; // テキスト変数
+@import "./setting/gap";        // 間隔
+
+// サイト内（基本パーツ）
+@import "./components/common";  // 共通
+@import "./components/header";  // ヘッダー
+@import "./components/footer";  // フッター
+@import "./components/nav";     // ナビゲーション
+@import "./components/contents";// コンテンツ
+@import "./components/contact"; // お問い合わせ
+@import "./components/flex";    // 横並び要素
+@import "./components/banner";  // バナー
+@import "./components/tab";     // タブ
+@import "./components/modal";   // モーダル
+@import "./components/btn";     // ボタン
+
+// 各ページ
+@import "./page/top";
+@import "./page/concept";
+@import "./page/layout";
+@import "./page/plan";
+@import "./page/location";
+@import "./page/quality";       // 基本使わない。
+@import "./page/overview";      // 基本使わない。
+
+// 導入
+@import "./introduction/accordion";
+@import "./introduction/aos";
+@import "./introduction/menu";
+@import "./introduction/pageTop";
+@import "./introduction/swiper";
+
+// アニメーション
+@import "./animation/fade";
+@import "./animation/slide";
