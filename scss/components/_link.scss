@@ -1,0 +1,23 @@
+// リンク関係（aタグ）
+
+.c-link{
+	&.-contact{
+		display: block;
+    width: auto;
+    height: auto;
+		box-shadow: 4px 4px 11px #00000030;
+		transition: all 0.5s;
+		.c-contents{
+			overflow: hidden;
+			.imgBox{transition: all 0.5s;}
+		}
+		img{
+		}
+		&:hover{
+			transform: scale(1.05);
+			.c-contents{
+				.imgBox{transform: scale(1.05);}
+			}
+		}
+	}
+}

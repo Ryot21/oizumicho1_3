@@ -1150,7 +1150,11 @@ p.s-LL, a.s-LL, span.s-LL {
   }
 }
 .c-contents.-imgBg .c-contentsBox {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 .c-contents.logoArea {
   margin: auto;
@@ -1223,6 +1227,27 @@ p.s-LL, a.s-LL, span.s-LL {
 @media (width >= 1400px) {
   .contactItem_sub02 {
     top: 65%;
+  }
+}
+
+.c-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (width >= 768px) {
+  .c-flex {
+    flex-wrap: nowrap;
+  }
+}
+.c-flex.-p01 {
+  justify-content: space-between;
+}
+.c-flex.-p01 li {
+  width: 100%;
+}
+@media (width >= 768px) {
+  .c-flex.-p01 li {
+    width: 49%;
   }
 }
 
@@ -1354,6 +1379,26 @@ button:hover {
 a {
   transition: 0.3s;
   color: #333333;
+}
+
+.c-link.-contact {
+  display: block;
+  width: auto;
+  height: auto;
+  box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.1882352941);
+  transition: all 0.5s;
+}
+.c-link.-contact .c-contents {
+  overflow: hidden;
+}
+.c-link.-contact .c-contents .imgBox {
+  transition: all 0.5s;
+}
+.c-link.-contact:hover {
+  transform: scale(1.05);
+}
+.c-link.-contact:hover .c-contents .imgBox {
+  transform: scale(1.05);
 }
 
 .top {
