@@ -1171,6 +1171,7 @@ p.s-LL, a.s-LL, span.s-LL {
   }
 }
 .c-contents.w1100 {
+  width: 90%;
   margin: auto;
 }
 @media (width >= 768px) {

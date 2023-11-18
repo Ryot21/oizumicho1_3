@@ -156,6 +156,7 @@
 		}
 	}
 	&.w1100{
+		width: 90%;
 		margin: auto;
 		@include min(768){
 			width: 85%;
