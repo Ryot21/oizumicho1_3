@@ -7,7 +7,9 @@
 	}
 	// 反転
 	&.-reverse{
-		flex-direction: row-reverse;
+		@include min(768){
+			flex-direction: row-reverse;
+		}
 	}
 	&.-p01{
 		justify-content: space-between;

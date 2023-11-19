@@ -1371,8 +1371,10 @@ p.-f-gara, a.-f-gara, span.-f-gara {
     flex-wrap: nowrap;
   }
 }
-.c-flex.-reverse {
-  flex-direction: row-reverse;
+@media (width >= 768px) {
+  .c-flex.-reverse {
+    flex-direction: row-reverse;
+  }
 }
 .c-flex.-p01 {
   justify-content: space-between;
