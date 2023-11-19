@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6,p,a,span{
 
     // 色
     &.-color01{color: $site-color01;}
-    
+
 }
 
 // 大きさ
@@ -41,7 +41,7 @@ p,a,span{
         &.s-S{
             font-size: 12px;
             @include min(768){
-                font-size: clamp(12px, 1vw, 14px);
+                font-size: clamp(12px, 1vw, 16px);
             }
         }
         &.s-M{

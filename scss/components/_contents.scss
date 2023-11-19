@@ -6,7 +6,7 @@
 
 .c-contents{
 	position: relative;
-	.imgBox{ 
+	.imgBox{
 		&.-sp{
 			@include max(768){
 				width: 100vw;
@@ -136,25 +136,22 @@
 	&.-imgBg{//背景画像
 		.c-contentsBox{//背景要素内 > 設置場所
 			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 100%;
+			&.-center{ // 基本
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+			}
+
+			&.-number{
+				top: 0%;
+				left: 15%;
+				transform: translate(-50%, -50%);
+				width: 25%;
+			}
 		}
 	}
 
-
-	// 横幅
-	&.logoArea{
-		margin: auto;
-		width: 20%;
-		@include min(768){
-			width: 10%;
-		}
-		@include min(1600){
-			width: 7%;
-		}
-	}
 	&.w1100{
 		@include min(768){
 			width: 85%;
@@ -184,3 +181,43 @@
 		}
 	}
 }
+
+	// ロゴ関係
+	.logoArea{
+		margin: auto;
+		width: 20%;
+		@include min(768){
+			width: 10%;
+		}
+		@include min(1600){
+			width: 7%;
+		}
+		&.-c-In{
+			width: auto;
+			margin-left: 0;
+			img{
+				width: 20%;
+				@include min(768){
+					width: 10%;
+				}
+			}
+		}
+		&.-mugen{
+			@include min(768){
+				width: 10%;
+			}
+			@include min(1600){
+				width: 13%;
+			}
+		}
+	}
+	// タイトル関係
+	.titleArea{
+		&.-c-In{
+			img{
+				@include min(768){
+					width: 33%;
+				}
+			}
+		}
+	}

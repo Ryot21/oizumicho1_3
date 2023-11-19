@@ -5,6 +5,10 @@
 	@include min(768){
 		flex-wrap: nowrap;
 	}
+	// 反転
+	&.-reverse{
+		flex-direction: row-reverse;
+	}
 	&.-p01{
 		justify-content: space-between;
 		li{
@@ -14,4 +18,6 @@
 			}
 		}
 	}
+
+
 }

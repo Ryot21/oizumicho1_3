@@ -124,7 +124,7 @@ p.s-S, a.s-S, span.s-S {
 }
 @media (width >= 768px) {
   p.s-S, a.s-S, span.s-S {
-    font-size: clamp(12px, 1vw, 14px);
+    font-size: clamp(12px, 1vw, 16px);
   }
 }
 p.s-M, a.s-M, span.s-M {
@@ -1230,24 +1230,18 @@ p.-f-gara, a.-f-gara, span.-f-gara {
 }
 .c-contents.-imgBg .c-contentsBox {
   position: absolute;
+}
+.c-contents.-imgBg .c-contentsBox.-center {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.c-contents.logoArea {
-  margin: auto;
-  width: 20%;
-}
-@media (width >= 768px) {
-  .c-contents.logoArea {
-    width: 10%;
-  }
-}
-@media (width >= 1600px) {
-  .c-contents.logoArea {
-    width: 7%;
-  }
+.c-contents.-imgBg .c-contentsBox.-number {
+  top: 0%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 25%;
 }
 @media (width >= 768px) {
   .c-contents.w1100 {
@@ -1277,6 +1271,49 @@ p.-f-gara, a.-f-gara, span.-f-gara {
   .c-contents.w80s {
     width: 80%;
     margin: auto;
+  }
+}
+
+.logoArea {
+  margin: auto;
+  width: 20%;
+}
+@media (width >= 768px) {
+  .logoArea {
+    width: 10%;
+  }
+}
+@media (width >= 1600px) {
+  .logoArea {
+    width: 7%;
+  }
+}
+.logoArea.-c-In {
+  width: auto;
+  margin-left: 0;
+}
+.logoArea.-c-In img {
+  width: 20%;
+}
+@media (width >= 768px) {
+  .logoArea.-c-In img {
+    width: 10%;
+  }
+}
+@media (width >= 768px) {
+  .logoArea.-mugen {
+    width: 10%;
+  }
+}
+@media (width >= 1600px) {
+  .logoArea.-mugen {
+    width: 13%;
+  }
+}
+
+@media (width >= 768px) {
+  .titleArea.-c-In img {
+    width: 33%;
   }
 }
 
@@ -1333,6 +1370,9 @@ p.-f-gara, a.-f-gara, span.-f-gara {
   .c-flex {
     flex-wrap: nowrap;
   }
+}
+.c-flex.-reverse {
+  flex-direction: row-reverse;
 }
 .c-flex.-p01 {
   justify-content: space-between;
@@ -3180,4 +3220,33 @@ header {
   100% {
     transform: translateY(10%);
   }
+}
+@keyframes bg-color {
+  0% {
+    background-color: #a356af;
+  }
+  15% {
+    background-color: #7481cd;
+  }
+  30% {
+    background-color: #d22c91;
+  }
+  45% {
+    background-color: #a356af;
+  }
+  60% {
+    background-color: #7481cd;
+  }
+  75% {
+    background-color: #4ca5e6;
+  }
+  85% {
+    background-color: #7481cd;
+  }
+  100% {
+    background-color: #a356af;
+  }
+}
+.bg-color {
+  animation: bg-color 10s infinite;
 }/*# sourceMappingURL=style.css.map */

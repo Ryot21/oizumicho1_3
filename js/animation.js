@@ -1,23 +1,24 @@
-function fadeAnime() {
-  var galleryItems = document.querySelectorAll('.-f-gallery li');
-  var scroll = window.scrollY;
-  var windowHeight = window.innerHeight;
+const objects = document.querySelectorAll('.a-flip');
 
-  galleryItems.forEach(function(item) {
-    var elemPos = item.getBoundingClientRect().top + scroll;
-
-    if (scroll >= elemPos - windowHeight) {
-      item.classList.add('flipLeft');
-    } else {
-      item.classList.remove('flipLeft');
-    }
+const cb = function(entries, observer) {
+  entries.forEach(entry => {
+      if(entry.isIntersecting) {
+          entry.target.classList.add('flipLeft');
+          observer.unobserve(entry.target);
+      } else {
+          entry.target.classList.remove('flipLeft'); // ビューポート外に出た時にクラスを削除
+      }
   });
 }
 
-window.addEventListener('scroll', function() {
-  fadeAnime();
-});
+const options = {
+    root: null,
+    rootMargin: "10px 20px",
+    threshold: 0,
+}
 
-window.addEventListener('load', function() {
-  fadeAnime();
+const io = new IntersectionObserver(cb, options);
+
+objects.forEach(object => {
+    io.observe(object);
 });
