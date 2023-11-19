@@ -156,14 +156,31 @@
 		}
 	}
 	&.w1100{
-		width: 90%;
-		margin: auto;
 		@include min(768){
 			width: 85%;
 			max-width: 1100px;
+			margin: auto;
 		}
 		@include min(1600){
 			width: 57.4%;
+		}
+	}
+	&.w90s{
+		@include max(768){
+			width: 90%;
+			margin: auto;
+		}
+	}
+	&.w85s{
+		@include max(768){
+			width: 85%;
+			margin: auto;
+		}
+	}
+	&.w80s{
+		@include max(768){
+			width: 80%;
+			margin: auto;
 		}
 	}
 }
