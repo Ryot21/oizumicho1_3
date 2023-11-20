@@ -1,4 +1,4 @@
-@keyframes bg-color {
+@keyframes bg-color-bg {
     0% { background-color: #a356af; }
     15% { background-color: #7481cd; }
     30% { background-color: #d22c91; }
@@ -7,10 +7,19 @@
     75% { background-color: #4ca5e6; }
     85% { background-color: #7481cd; }
     100% { background-color: #a356af; }
-
-
+}
+@keyframes bg-color-text {
+    0% { color: #a356af; }
+    15% { color: #7481cd; }
+    30% { color: #d22c91; }
+    45% { color: #a356af; }
+    60% { color: #7481cd; }
+    75% { color: #4ca5e6; }
+    85% { color: #7481cd; }
+    100% { color: #a356af; }
 }
 
 .bg-color{
-    animation: bg-color 5s infinite;
+    &-bg{ animation: bg-color-bg 5s infinite;}
+    &-text{ animation: bg-color-text 5s infinite;}
 }

@@ -162,6 +162,12 @@
 			width: 57.4%;
 		}
 	}
+	&.w95s{
+		@include max(768){
+			width: 95%;
+			margin: auto;
+		}
+	}
 	&.w90s{
 		@include max(768){
 			width: 90%;
@@ -196,7 +202,7 @@
 			width: auto;
 			margin-left: 0;
 			img{
-				width: 20%;
+				width: 7%;
 				@include min(768){
 					width: 10%;
 				}
@@ -215,6 +221,7 @@
 	.titleArea{
 		&.-c-In{
 			img{
+				width: 33%;
 				@include min(768){
 					width: 33%;
 				}

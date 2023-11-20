@@ -65,6 +65,14 @@ p,a,span{
         &.s-3L{
 
         }
+        &.s-mugen{
+            font-size: 24px;
+            transform: scale(5);
+            @include min(768){
+                font-size: clamp(16px, 2.8vw, 53px);
+                transform: scale(5);
+            }
+        }
         &.s-number{
             font-size: 16px;
             @include min(768){

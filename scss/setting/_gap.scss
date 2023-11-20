@@ -138,8 +138,18 @@
 		margin-bottom: 12% !important;
 	}
 }
+.mgb12s {
+	@include max(768){
+		margin-bottom: 12% !important;
+	}
+}
 .mgb15 {
 	@include min(768){
+		margin-bottom: 15% !important;
+	}
+}
+.mgb15s {
+	@include max(768){
 		margin-bottom: 15% !important;
 	}
 }
@@ -148,8 +158,18 @@
 		margin-bottom: 18% !important;
 	}
 }
+.mgb18s {
+	@include max(768){
+		margin-bottom: 18% !important;
+	}
+}
 .mgb20 {
 	@include min(768){
+		margin-bottom: 20% !important;
+	}
+}
+.mgb20s {
+	@include max(768){
 		margin-bottom: 20% !important;
 	}
 }

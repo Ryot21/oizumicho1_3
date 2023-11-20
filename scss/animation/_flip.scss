@@ -10,12 +10,11 @@
     }
   }
 
-  .flipLeft{
+.a-flipLeft{
     animation-name: flipLeft;
     animation-fill-mode:forwards;
     perspective-origin: left center;
     opacity: 0;
-
     &.-item01{
         animation-duration:0.5s;
     }
@@ -30,5 +29,20 @@
     }
     &.-item05{
         animation-duration:2.25s;
+    }
+    &.-c-item{
+        animation-duration:1.25s;
+        animation-timeline: view();
+        animation-range: entry 0% contain 20%;
+        img{
+            filter: drop-shadow(2px 2px 2px gray);
+            transition: 1s all;
+        }
+        &:hover{
+            img{
+                filter: drop-shadow(2px 2px 4px gray);
+                // transform: scale(1.05);
+            }
+        }
     }
   }

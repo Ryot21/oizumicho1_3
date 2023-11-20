@@ -3,10 +3,10 @@ const objects = document.querySelectorAll('.a-flip');
 const cb = function(entries, observer) {
   entries.forEach(entry => {
       if(entry.isIntersecting) {
-          entry.target.classList.add('flipLeft');
+          entry.target.classList.add('a-flipLeft');
           observer.unobserve(entry.target);
       } else {
-          entry.target.classList.remove('flipLeft'); // ビューポート外に出た時にクラスを削除
+          entry.target.classList.remove('a-flipLeft'); // ビューポート外に出た時にクラスを削除
       }
   });
 }
