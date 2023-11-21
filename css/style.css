@@ -143,6 +143,11 @@ p.s-L, a.s-L, span.s-L {
     font-size: clamp(10px, 1.8vw, 24px);
   }
 }
+@media (768px >= width) {
+  p.s-L.-s14, a.s-L.-s14, span.s-L.-s14 {
+    font-size: 14px;
+  }
+}
 p.s-LL, a.s-LL, span.s-LL {
   font-size: 18px;
 }
@@ -385,8 +390,20 @@ p.-f-gara, a.-f-gara, span.-f-gara {
   }
 }
 
+@media (768px >= width) {
+  .mgb25s {
+    margin-bottom: 25% !important;
+  }
+}
+
 @media (width >= 768px) {
   .mgb30 {
+    margin-bottom: 30% !important;
+  }
+}
+
+@media (768px >= width) {
+  .mgb30s {
     margin-bottom: 30% !important;
   }
 }
@@ -1278,6 +1295,31 @@ p.-f-gara, a.-f-gara, span.-f-gara {
   width: 25%;
   filter: drop-shadow(2px 2px 2px gray);
 }
+.c-contents.-imgBg .c-contentsBox.-m-goutou {
+  top: 6%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-m-goutou {
+    top: 1%;
+    left: 3.4%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-m-des {
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 89%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-m-des {
+    top: 25%;
+    left: 17%;
+    width: auto;
+  }
+}
 @media (width >= 768px) {
   .c-contents.w1100 {
     width: 85%;
@@ -1358,6 +1400,15 @@ p.-f-gara, a.-f-gara, span.-f-gara {
 @media (width >= 768px) {
   .titleArea.-c-In img {
     width: 33%;
+  }
+}
+
+.spell {
+  width: 30%;
+}
+@media (width >= 768px) {
+  .spell {
+    width: 35%;
   }
 }
 

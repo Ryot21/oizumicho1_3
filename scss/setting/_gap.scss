@@ -178,8 +178,18 @@
 		margin-bottom: 25% !important;
 	}
 }
+.mgb25s {
+	@include max(768){
+		margin-bottom: 25% !important;
+	}
+}
 .mgb30 {
 	@include min(768){
+		margin-bottom: 30% !important;
+	}
+}
+.mgb30s {
+	@include max(768){
 		margin-bottom: 30% !important;
 	}
 }

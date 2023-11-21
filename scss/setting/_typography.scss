@@ -55,6 +55,11 @@ p,a,span{
             @include min(768){
                 font-size: clamp(10px, 1.8vw, 24px);
             }
+            &.-s14{
+                @include max(768){
+                    font-size: 14px;
+                }
+            }
         }
         &.s-LL{
             font-size: 18px;

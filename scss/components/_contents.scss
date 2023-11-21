@@ -105,7 +105,6 @@
 					width: 30%;
 				}
 			}
-
 			&.-f-item{// 表示要素の横幅を設定
 				@include min(768){
 					width: 100% / 5;
@@ -142,13 +141,37 @@
 				transform: translate(-50%, -50%);
 				width: 100%;
 			}
-
 			&.-number{
 				top: 0%;
 				left: 15%;
 				transform: translate(-50%, -50%);
 				width: 25%;
 				filter: drop-shadow(2px 2px 2px gray);
+			}
+
+
+			// 間取り > 号棟
+			&.-m-goutou{
+				top: 6%;
+				left: 14%;
+				transform: translate(-50%, -50%);
+				width: auto;
+				@include min(768){
+					top: 1%;
+					left: 3.4%;
+				}
+			}
+			// 間取り > des
+			&.-m-des{
+				top: 16%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 89%;
+				@include min(768){
+					top: 25%;
+					left: 17%;
+					width: auto;
+				}
 			}
 		}
 	}
@@ -227,5 +250,12 @@
 					width: 33%;
 				}
 			}
+		}
+	}
+	// スペル
+	.spell{
+		width: 30%;
+		@include min(768){
+			width: 35%;
 		}
 	}
