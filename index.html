@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOPページ</title>
+    <title>メイクフル 練馬区大泉町１丁目 次世代型新築戸建 全４棟</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" type="image/png" href="images/apple-touch-icon.png">
     <!-- デプロイ前に確認・サンプル -->
     <meta name="keywords" content="○○市,西武池袋線,西武新宿線,○○駅,○○支店,住協">
     <meta name="description" content="
-        ここにはサイトデザインのf-view下部にあるコンテンツから
-        いい感じのテキストを使用する。多くても100文字以内にすること。
+        外観デザインの美しさを際立てる「塔屋」と、プライベートスカイテラス。
+        暮らしの可能性が広がる外階段が生み出す華やかな暮らし。
+        心高鳴る、4棟の新築住宅をご紹介します。
     ">
-    <link rel="canonical" href="https://www.jyu-g.co.jp/special/master_new/">
+    <link rel="canonical" href="https://www.jyu-g.co.jp/special/oizumicho1_3/">
     <!--// デプロイ前に確認・サンプル -->
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="js/splide.min.js"></script>
 
     <!-- <script src="js/jquery-3.6.3.min.js"></script> -->
     <!-- <script src="js/micromodal.min.js"></script> -->
@@ -122,7 +123,7 @@
             </div>
         </div>
         <!-- コンテンツ01 -->
-        <div class="c-contents w1100 w90s mgb5 mgb10s">
+        <div class="c-contents w1100 w90s mgb5 mgb10s a-sc-fade">
             <img class="mgb5s" src="images/bg/top-content01.png" alt="外観パース">
             <!-- <img src="images/SVG/top-content01_text.svg" alt="5路線3駅利用可能。次世代へ発展を続ける和光市駅、光が丘駅、大泉学園駅利用可。"> -->
             <p class="s-L mgb5s">
@@ -140,7 +141,7 @@
             </p>
         </div>
         <!-- ロゴ表示 -->
-        <div class="c-contents logoArea mgb5 mgb10s">
+        <div class="c-contents logoArea mgb5 mgb10s a-sc-fade">
             <img src="images/SVG/logo_text.svg" alt="Makefull">
         </div>
         <!-- お問い合せ -->
@@ -174,7 +175,7 @@
         </div>
 
         <!-- コンセプト -->
-        <div id="content01" class="c-contents w1100 w90s mgb10 mgb10s">
+        <div id="content01" class="c-contents w1100 w85s mgb10 mgb10s">
             <ul class="c-flex -p01">
                 <li class="mgb5s">
                     <div class="c-contents -imgBg">
@@ -184,7 +185,7 @@
                 </li>
                 <li>
                     <div class="logoArea -c-In mgb5 mgb3s"><img src="images/SVG/logo.svg" alt="ロゴ"></div>
-                    <div class="titleArea -c-In mgb5 mgb5s">
+                    <div class="titleArea -Concept mgb5 mgb5s">
                         <img src="images/SVG/concept.svg" alt="Concept">
                         <p class="s-M -lh-1_5 -left glitch">コンセプト</p>
                     </div>
@@ -202,14 +203,12 @@
                 </li>
             </ul>
         </div>
-
         <!-- ∞ -->
         <div class="c-contents w1100 mgb15 mgb20s a-sc-fade">
             <p class="s-mugen bg-color-text">∞</p>
         </div>
-
         <!-- プラン -->
-        <div id="content02" class="c-contents w1100 w90s mgb5 mgb20s">
+        <div id="content02" class="c-contents w1100 w85s mgb5 mgb20s">
             <ul class="c-flex -reverse -p01">
                 <li class="mgb5s">
                     <div class="c-contents -imgBg">
@@ -218,7 +217,7 @@
                     </div>
                 </li>
                 <li class="mgb5s">
-                    <div class="titleArea -c-In mgb5 mgb5s">
+                    <div class="titleArea -Planning mgb5 mgb5s">
                         <img src="images/SVG/planning.svg" alt="Planning">
                         <p class="s-M -lh-1_5 -left">プランニング</p>
                     </div>
@@ -238,7 +237,8 @@
                 </li>
             </ul>
         </div>
-        <div class="c-contents -imgBg w1100 mgb10 mgb10s">
+        <!-- プラン > 間取りエリア -->
+        <div class="c-contents -imgBg w1100 w90s mgb10 mgb10s">
             <div class="imgBox">
                 <img class="pc" src="images/bg/madori-b.png" alt="B号棟 間取図">
                 <img class="sp" src="images/bg/madori-b_s.png" alt="B号棟 間取図">
@@ -252,47 +252,175 @@
                 モダニズム建築が魅力のモデル棟。
             </p>
         </div>
+        <!-- プラン > 提案エリア -->
+        <div class="c-contents w1100 w90s mgb5 mgb20s">
+            <ul class="c-flex -p02">
+                <li class="mgb5s">
+                    <div class="titleArea -ForExample mgb5 mgb4s">
+                        <img src="images/SVG/ForExample.svg" alt="ForExample">
+                    </div>
+                    <p class="s-L -lh-1_5 -left pdl2 mgb1 mgb2s">外階段が叶える可能性。</p>
+                    <p class="s-M -lh-1_5 -left pdl2">
+                        いつか、夢のカフェを。憧れのネイルサロンの経営を。<br>
+                        メイクフルであれば、様々な願いを叶える事ができます。
+                    </p>
+                </li>
+                <li class="mgb5s">
+                    <div class="c-contents -imgBg">
+                        <div class="imgBox"><img src="images/item/house_b_a.png" alt="パース"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="c-contents w1100 w90s mgb10 mgb20s">
+            <ul class="c-flex -reverse -p02">
+                <li class="mgb5s">
+                    <div class="titleArea -PrivateSkyTerrace mgb5 mgb4s">
+                        <img src="images/SVG/PrivateSkyTerrace.svg" alt="Private Sky Terrace">
+                    </div>
+                    <p class="s-L -lh-1_5 -left pdl2 mgb1 mgb2s">空を、ひとり占め―。</p>
+                    <p class="s-M -lh-1_5 -left pdl2">
+                        メイクフルに設置したプライベートスカイテラスは、<br>
+                        家族だけの特等席。<br>
+                        星空を眺めたり、ベランピングを楽しんだり。<br>
+                        家族それぞれの「コト」を楽しめます。
+                    </p>
+                </li>
+                <li class="pdr5 mgb5s">
+                    <div class="c-contents -imgBg">
+                        <div class="imgBox" style="padding: 5px; border: 1px solid #333333;">
+                            <img src="images/item/house_b_b.png" alt="屋上　内観写真">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- お問い合せ -->
+        <div class="c-contents w1100 w80s mgb10 mgb30s">
+            <ul class="c-flex -p01">
+                <li class="mgb5s">
+                    <a class="c-link -contact" href="">
+                        <div class="c-contents -imgBg ">
+                            <div class="imgBox">
+                                <img src="images/item/contact-btn_a_bg.png" alt="モデルハウス見学予約_背景">
+                            </div>
+                            <div class="c-contentsBox -center">
+                                <img src="images/item/contact-btn_a.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="c-link -contact" href="">
+                        <div class="c-contents -imgBg ">
+                            <div class="imgBox">
+                                <img src="images/item/contact-btn_b_bg.png" alt="モデルハウス見学予約_背景">
+                            </div>
+                            <div class="c-contentsBox -center">
+                                <img src="images/item/contact-btn_b.png" alt="">
+                            </div>
+                        </div>
+                    </a>    
+                </li>
+            </ul>
+        </div>
 
+        <!-- ギャラリー -->
+        <div id="content03" class="c-contents w1100 w85s mgb5 mgb10s">
+            <ul class="c-flex -p01">
+                <li class="mgb5s">
+                    <div class="c-contents -imgBg">
+                        <div class="imgBox a-flipLeft -c-item"><img src="images/item/house_c.png" alt=""></div>
+                        <div class="c-contentsBox -number"><img src="images/item/number03.png" alt="02"></div>
+                    </div>
+                </li>
+                <li class="mgb5s">
+                    <div class="titleArea -MakefullGallery mgb5 mgb5s">
+                        <img src="images/SVG/MakefullGallery.svg" alt="MakefullGallery">
+                        <p class="s-M -lh-1_5 -left">ギャラリー</p>
+                    </div>
+                    <p class="s-L -left mgb5 mgb3s">ディテールを追求することが、<br class="sp">建築美の基本。</p>
+                    <p class="s-S -lh-1_5 -left">
+                        メイクフルは、その可能性だけでなく、<br>
+                        ディテールの美しさを追求したことが<br class="sp">特徴として挙げられます。<br>
+                        ここでは、その美しさの一端をご紹介いたします。<br>
+                        心が高鳴るデザインを、ご覧ください。<br>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- ギャラリー > カルーセル -->
+        <div class="c-contents w1100 w90s mgb5 mgb20s">
+            <div class="splide Makefull-slider"  role="group1" aria-label="Makefull">
+                <div class="splide-wrapper" style="position: relative;">
+                    <div class="splide__arrows"></div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 1" href="images/slider/slider01.png">
+                                    <img class="thumbnail" src="images/slider/slider01.png" data-full="images/slider/slider01.png" alt="写真1">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 2" href="images/slider/slider02.png">
+                                    <img class="" src="images/slider/slider02.png" alt="写真2">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 3" href="images/slider/slider03.png">
+                                    <img class="" src="images/slider/slider03.png" alt="写真3">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 4" href="images/slider/slider04.png">
+                                    <img class="" src="images/slider/slider04.png" alt="写真4">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 5" href="images/slider/slider05.png">
+                                    <img class="" src="images/slider/slider05.png" alt="写真5">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 6" href="images/slider/slider06.png">
+                                    <img class="" src="images/slider/slider06.png" alt="写真6">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 7" href="images/slider/slider07.png">
+                                    <img class="" src="images/slider/slider07.png" alt="写真7">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 8" href="images/slider/slider08.png">
+                                    <img class="" src="images/slider/slider08.png" alt="写真8">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 9" href="images/slider/slider09.png">
+                                    <img class="" src="images/slider/slider09.png" alt="写真9">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 10" href="images/slider/slider10.png">
+                                    <img class="" src="images/slider/slider10.png" alt="写真10">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 11" href="images/slider/slider11.png">
+                                    <img class="" src="images/slider/slider11.png" alt="写真11">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- //コンテンツ -->
 
     <!-- footer -->
     <footer id="footer" class="c-footer">
-        <!-- <div class="c-footer-wrapper mgb1 mgb10s">
-            <div class="c-footer__contactArea">
-                <ul class="c-footer__contactLists">
-                    <li class="contactItem">
-                        <a href="index.html" class="lh-1">
-                            <span class="contactItem_main s-M">資料請求</span>
-                            <br>
-                            <span class="contactItem_sub s-SS">REQUEST</span>
-                        </a>
-                    </li>
-                    <li class="contactItem">
-                        <a href="concept.html" class="lh-1">
-                            <span class="contactItem_main s-M">見学予約</span>
-                            <br>
-                            <span class="contactItem_sub s-SS">RESERV</span>
-                        </a>
-                    </li>
-                    <li class="pc contactItem">
-                        <a href="layout.html" class="lh-1">
-                            <span class="contactItem_main s-M">お問い合わせ</span>
-                            <br>
-                            <span class="contactItem_sub s-SS">INQUIRY</span>
-                        </a>
-                    </li>
-                    <li class="pc contactItem">
-                        <a href="plan.html" class="lh-1">
-                            <span class="contactItem_main s-M">住まい情報トップ</span>
-                            <br>
-                            <span class="contactItem_sub s-SS">HOME</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div> -->
-
         <div class="c-footer__btnArea mgb2 mgb10s">
             <a href="">
                 <span class="s-M">物件概要はこちら</span>
@@ -315,13 +443,72 @@
         </ul>
     </div> -->
     <!-- //固定アイテム -->
+    <!-- <script src="js/slick.min.js"></script> -->
 
     <script>
-        // MicroModal.init();//モダール使用
+
         // window.addEventListener('scroll', checkScroll);
+        // スライダー
+        // var mySwiper = new Swiper('.swiper-container', {
+        //     // loop: true,
+        //     autoplay: true,
+        //     slidesPerView: 3,
+        //     slidesPerGroup: 3,
+        //     spaceBetween: 10,
+        //     keyboard: true,
+        //     speed: 3000,
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         type: 'bullets',
+        //         clickable: true
+        //     }
+        // });
+
+        // const target = '.Makefull-slider';
+        // const options = {
+        //     type: "loop",
+        //     autoplay   : true,
+        //     interval   : 3000,
+        //     pauseOnFocus: false,
+        //     cover: true,
+        //     heightRatio: 0.5,
+        //     perPage: 5,
+        //     perMove: 1,
+        //     gap: 16,
+        //     updateOnMove: true,
+        //     padding: "5rem", //左右のスライドを5rem分表示させる
+        //     focus: "center", //アクティブなスライドを中央に表示する
+        // }
+        
+        // const mySplide = new Splide(target, options);
+        // mySplide.mount();
+
+
+        new Splide(".Makefull-slider", {
+            type: "loop",
+            autoplay   : true,
+            speed: 1000, // スライダーの移動時間
+            // autoWidth: true,
+            autoHeight :true,
+            interval   : 3000,
+            pauseOnFocus: false,
+            cover: true,
+            // heightRatio: 0.5,
+            perPage: 5,
+            perMove: 1,
+            gap: 16,
+            updateOnMove: true,
+            padding: "5rem", //左右のスライドを5rem分表示させる
+            focus: "center", //アクティブなスライドを中央に表示する
+            breakpoints: {
+                500: {
+                    perPage: 1,
+                },
+            },
+        }).mount();
+
     </script>
+
         <!-- <script src="js/animation.js"></script> -->
-    <script>
-    </script>
 </body>
 </html>

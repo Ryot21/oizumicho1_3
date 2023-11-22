@@ -3,8 +3,8 @@
 .c-link{
 	&.-contact{
 		display: block;
-    width: auto;
-    height: auto;
+		width: auto;
+		height: auto;
 		box-shadow: 4px 4px 11px #00000030;
 		transition: all 0.5s;
 		.c-contents{
@@ -19,5 +19,19 @@
 				.imgBox{transform: scale(1.05);}
 			}
 		}
+	}
+	&.-img{
+		display: block;
+        transform: scale(1);
+        transition-duration: 0.5s;
+        overflow: hidden;
+        @include min(768){
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(.95);
+                transition-duration: 0.2s;
+                // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            }
+        }
 	}
 }

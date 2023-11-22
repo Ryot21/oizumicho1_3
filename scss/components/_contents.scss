@@ -178,7 +178,7 @@
 
 	&.w1100{
 		@include min(768){
-			width: 85%;
+			width: 75%;
 			max-width: 1100px;
 			margin: auto;
 		}
@@ -244,15 +244,40 @@
 	}
 	// タイトル関係
 	.titleArea{
-		&.-c-In{
-			img{
-				width: 33%;
-				@include min(768){
+			&.-Concept,
+			&.-Planning{
+				img{
 					width: 33%;
+					@include min(768){
+						width: 33%;
+					}
+				}
+			}
+			&.-ForExample{
+				img{
+					width: 43%;
+					@include min(768){
+						width: 33%;
+					}
+				}
+			}
+			&.-PrivateSkyTerrace{
+				img{
+					width: 68%;
+					@include min(768){
+						width: 53%;
+					}
+				}
+			}
+			&.-MakefullGallery{
+				img{
+					width: 55%;
+					@include min(768){
+						width: 53%;
+					}
 				}
 			}
 		}
-	}
 	// スペル
 	.spell{
 		width: 30%;

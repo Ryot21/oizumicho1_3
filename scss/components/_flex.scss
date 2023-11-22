@@ -20,6 +20,35 @@
 			}
 		}
 	}
-
+	&.-p02{
+		justify-content: space-between;
+		li{
+			@include max(768){
+				width: 100%;
+				&:nth-child(2){
+					position: relative;
+					width: 80%;
+					margin-right: 0;
+					margin-left: auto;
+					// filter: drop-shadow(5px 5px 2px $main-color--beige);
+					&::before{
+						// content: "";
+						// position: absolute;
+						// top: 5px;
+						// left: 5px;
+						// width: 100%;
+						// height: 100%;
+						// background: $main-color--beige;
+					}
+				}
+			}
+			@include min(768){
+				width: 60%;
+				&:nth-child(2){
+					width: 40%;
+				}
+			}
+		}
+	}
 
 }

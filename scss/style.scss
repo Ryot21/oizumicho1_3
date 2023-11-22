@@ -7,6 +7,13 @@
 @import "./setting/typography"; // テキスト変数
 @import "./setting/gap";        // 間隔
 
+// 導入
+@import "./introduction/accordion";
+@import "./introduction/aos";
+@import "./introduction/menu";
+@import "./introduction/pageTop";
+@import "./introduction/splide.min";
+
 // サイト内（基本パーツ）
 @import "./components/common";  // 共通
 @import "./components/header";  // ヘッダー
@@ -19,7 +26,8 @@
 @import "./components/tab";     // タブ
 @import "./components/modal";   // モーダル
 @import "./components/btn";     // ボタン
-@import "./components/link";    //リンク
+@import "./components/link";    // リンク
+@import "./components/slider";  // カルーセル
 
 // 各ページ
 @import "./page/top";
@@ -29,13 +37,6 @@
 @import "./page/location";
 @import "./page/quality";       // 基本使わない。
 @import "./page/overview";      // 基本使わない。
-
-// 導入
-@import "./introduction/accordion";
-@import "./introduction/aos";
-@import "./introduction/menu";
-@import "./introduction/pageTop";
-@import "./introduction/swiper";
 
 // アニメーション
 @import "./animation/flip";

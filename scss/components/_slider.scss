@@ -1,0 +1,87 @@
+
+.splide{
+    // margin: auto;
+    .splide__track{
+        .splide__list{
+            .splide__slide{
+                height: calc(((100% + 16px) / 4) - 16px) !important;
+                margin: 0 10px;
+                text-align: end;
+                opacity: .8;
+                overflow: hidden;
+                // transform: scale(.94);
+                transition: 1s all;
+                @include max(768){
+                    // padding-left: 10px;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                    pointer-events: auto;
+                    @include min(768){
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                a{
+                    display: block;
+                    color: $main-color--b;
+                    background: $main-color--w;
+                    font-weight: bold;
+                    overflow: hidden;
+                    img{
+                        transition: .5s all;
+                        @include max(768){
+                            color: $main-color--b;
+                            margin-right: 9vw;
+                        }
+                        &::after{
+                            @include max(768){
+                                background: $main-color--b;
+                            }
+                        }
+                    }
+                    &:hover{
+                        color: $main-color--beige;
+                        img{
+                            transform: scale(1.05);
+                            opacity: 1;
+                        }
+                    }
+                }
+                &.is-active{
+                    border: 1px solid $main-color--b;
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                &.is-prev,
+                &.is-next{
+                    opacity: .95;
+                    // transform: scale(.95);
+                }
+            }
+        }
+    }
+}
+
+
+.splide__arrow--prev {
+    left: -3em;
+}
+.splide__arrow--next {
+    right: -3em;
+}
+
+.splide__pagination{
+    bottom: -2.5em;
+    .is-active{
+        background: $main-color--b;
+        border: 1px solid $main-color--b;
+    }
+    &__page{
+        .is-active{
+            background: $main-color--b;
+            border: 1px solid $main-color--b;
+        }
+    }
+}
