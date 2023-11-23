@@ -1,14 +1,13 @@
 @keyframes flipLeft{
     from {
-     transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
-    opacity: 0;
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+        opacity: 0;
     }
-  
     to {
-    transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
-    opacity: 1;
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+        opacity: 1;
     }
-  }
+}
 
 .a-flipLeft{
     animation-name: flipLeft;
@@ -45,4 +44,4 @@
             }
         }
     }
-  }
+}

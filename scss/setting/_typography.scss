@@ -25,6 +25,17 @@ h1,h2,h3,h4,h5,h6,p,a,span{
 	&.lh-1{line-height: 1;}
 	&.lh-1_5{line-height: 1.5;}
 
+    // 太さ
+    &.-b{font-weight: $f-b;}
+
+    // フォントファミリー
+    &.-f-gothic{
+        font-family: $f-gothic;
+    }
+    &.-f-gara{
+        font-family: $f-garamond;
+        font-style: italic;
+    }
     // 色
     &.-color01{color: $site-color01;}
 
@@ -84,9 +95,5 @@ p,a,span{
                 font-size: clamp(16px, 2.8vw, 53px);
             }
         }
-        // フォントファミリー
-        &.-f-gara{
-            font-family: $f-garamond;
-            font-style: italic;
-        }
+
 }

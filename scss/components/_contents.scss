@@ -245,7 +245,8 @@
 	// タイトル関係
 	.titleArea{
 			&.-Concept,
-			&.-Planning{
+			&.-Planning,
+			&.-Location{
 				img{
 					width: 33%;
 					@include min(768){
@@ -277,11 +278,19 @@
 					}
 				}
 			}
+			&.-LifeInformation{
+				img{
+					width: 55%;
+					@include min(768){
+						width: 30%;
+					}
+				}
+			}
 		}
 	// スペル
 	.spell{
-		width: 30%;
+		width: 33%;
 		@include min(768){
-			width: 35%;
+			width: 33%;
 		}
 	}
