@@ -169,7 +169,7 @@
 				width: 89%;
 				@include min(768){
 					top: 25%;
-					left: 17%;
+					left: 17.3%;
 					width: auto;
 				}
 			}
@@ -178,7 +178,7 @@
 
 	&.w1100{
 		@include min(768){
-			width: 75%;
+			width: 80%;
 			max-width: 1100px;
 			margin: auto;
 		}

@@ -18,7 +18,7 @@
     <!--// デプロイ前に確認・サンプル -->
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/splide.min.js"></script>
+    <script src="js/swiper.min.js"></script>
 
     <!-- <script src="js/jquery-3.6.3.min.js"></script> -->
     <!-- <script src="js/micromodal.min.js"></script> -->
@@ -92,7 +92,7 @@
     <main class="c-container">
         <!-- f-view -->
         <div class="c-contents -f-view mgb5">
-            <div class="imgBox -sp">
+            <div class="imgBox">
                 <img class="pc" src="images/bg/f-view.jpg" alt="4Brilliant colors stairs 外観デザインの美しさを際立てる「塔屋」と、プライベートスカイテラス。暮らしの可能性が広がる外階段が生み出す華やかな暮らし。心高鳴る、4棟の新築住宅をご紹介します。">
                 <img class="sp" src="images/bg/f-view_s.png" alt="4Brilliant colors stairs 外観デザインの美しさを際立てる「塔屋」と、プライベートスカイテラス。暮らしの可能性が広がる外階段が生み出す華やかな暮らし。心高鳴る、4棟の新築住宅をご紹介します。">
             </div>
@@ -123,7 +123,7 @@
             </div>
         </div>
         <!-- コンテンツ01 -->
-        <div class="c-contents w1100 w90s mgb5 mgb10s a-sc-fade">
+        <div class="c-contents w1100 w90s mgb10 mgb10s a-sc-fade">
             <img class="mgb5s" src="images/bg/top-content01.png" alt="外観パース">
             <!-- <img src="images/SVG/top-content01_text.svg" alt="5路線3駅利用可能。次世代へ発展を続ける和光市駅、光が丘駅、大泉学園駅利用可。"> -->
             <p class="s-L mgb5s">
@@ -145,7 +145,7 @@
             <img src="images/SVG/logo_text.svg" alt="Makefull">
         </div>
         <!-- お問い合せ -->
-        <div class="c-contents w1100 w80s mgb10 mgb30s">
+        <div class="c-contents w1100 w80s pdt7 mgb10 mgb30s">
             <ul class="c-flex -p01">
                 <li class="mgb5s">
                     <a class="c-link -contact" href="">
@@ -175,7 +175,7 @@
         </div>
 
         <!-- コンセプト -->
-        <div id="content01" class="c-contents w1100 w85s mgb10 mgb10s">
+        <div id="content01" class="c-contents w1100 w85s pdt5 mgb5 mgb10s">
             <ul class="c-flex -p01">
                 <li class="mgb5s">
                     <div class="c-contents -imgBg">
@@ -204,11 +204,11 @@
             </ul>
         </div>
         <!-- ∞ -->
-        <div class="c-contents w1100 mgb15 mgb20s a-sc-fade">
+        <div class="c-contents w1100 pdt5 mgb10 mgb20s a-sc-fade">
             <p class="s-mugen bg-color-text">∞</p>
         </div>
         <!-- プラン -->
-        <div id="content02" class="c-contents w1100 w85s mgb5 mgb20s">
+        <div id="content02" class="c-contents w1100 w85s pdt5 mgb5 mgb15s">
             <ul class="c-flex -reverse -p01">
                 <li class="mgb5s">
                     <div class="c-contents -imgBg">
@@ -238,7 +238,7 @@
             </ul>
         </div>
         <!-- プラン > 間取りエリア -->
-        <div class="c-contents -imgBg w1100 w90s mgb10 mgb10s">
+        <div class="c-contents -imgBg w1100 w90s pdt5 mgb5 mgb5s">
             <div class="imgBox">
                 <img class="pc" src="images/bg/madori-b.png" alt="B号棟 間取図">
                 <img class="sp" src="images/bg/madori-b_s.png" alt="B号棟 間取図">
@@ -253,7 +253,7 @@
             </p>
         </div>
         <!-- プラン > 提案エリア -->
-        <div class="c-contents w1100 w90s mgb5 mgb20s">
+        <div class="c-contents w1100 w90s pdt5 mgb3 mgb15s">
             <ul class="c-flex -p02">
                 <li class="mgb5s">
                     <div class="titleArea -ForExample mgb5 mgb4s">
@@ -272,7 +272,7 @@
                 </li>
             </ul>
         </div>
-        <div class="c-contents w1100 w90s mgb10 mgb20s">
+        <div class="c-contents w1100 w90s pdt5 mgb5 mgb15s">
             <ul class="c-flex -reverse -p02">
                 <li class="mgb5s">
                     <div class="titleArea -PrivateSkyTerrace mgb5 mgb4s">
@@ -296,7 +296,7 @@
             </ul>
         </div>
         <!-- お問い合せ -->
-        <div class="c-contents w1100 w80s mgb10 mgb30s">
+        <div class="c-contents w1100 w80s pdt7 mgb10 mgb30s">
             <ul class="c-flex -p01">
                 <li class="mgb5s">
                     <a class="c-link -contact" href="">
@@ -326,11 +326,29 @@
         </div>
 
         <!-- ギャラリー -->
-        <div id="content03" class="c-contents w1100 w85s mgb5 mgb10s">
-            <ul class="c-flex -p01">
+        <div id="content03" class="c-contents w1100 w85s pdt5 mgb5 mgb15s">
+            <ul class="c-flex -p01 mgb5 mgb2s">
                 <li class="mgb5s">
                     <div class="c-contents -imgBg">
-                        <div class="imgBox a-flipLeft -c-item"><img src="images/item/house_c.png" alt=""></div>
+                        <div class="imgBox a-flipLeft -c-item">
+                            <!-- <img src="images/item/house_c.png" alt=""> -->
+                            <div class="swiper swiperMain">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/slider/slider00.png" alt="写真01"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider01.png" alt="写真02"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider02.png" alt="写真03"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider03.png" alt="写真04"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider04.png" alt="写真05"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider05.png" alt="写真06"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider06.png" alt="写真07"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider07.png" alt="写真08"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider08.png" alt="写真09"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider09.png" alt="写真10"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider10.png" alt="写真11"></div>
+                                    <div class="swiper-slide"><img src="images/slider/slider11.png" alt="写真12"></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="c-contentsBox -number"><img src="images/item/number03.png" alt="02"></div>
                     </div>
                 </li>
@@ -348,72 +366,25 @@
                     </p>
                 </li>
             </ul>
-        </div>
-        <!-- ギャラリー > カルーセル -->
-        <div class="c-contents w1100 w90s mgb5 mgb20s">
-            <div class="splide Makefull-slider"  role="group1" aria-label="Makefull">
-                <div class="splide-wrapper" style="position: relative;">
-                    <div class="splide__arrows"></div>
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 1" href="images/slider/slider01.png">
-                                    <img class="thumbnail" src="images/slider/slider01.png" data-full="images/slider/slider01.png" alt="写真1">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 2" href="images/slider/slider02.png">
-                                    <img class="" src="images/slider/slider02.png" alt="写真2">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 3" href="images/slider/slider03.png">
-                                    <img class="" src="images/slider/slider03.png" alt="写真3">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 4" href="images/slider/slider04.png">
-                                    <img class="" src="images/slider/slider04.png" alt="写真4">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 5" href="images/slider/slider05.png">
-                                    <img class="" src="images/slider/slider05.png" alt="写真5">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 6" href="images/slider/slider06.png">
-                                    <img class="" src="images/slider/slider06.png" alt="写真6">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 7" href="images/slider/slider07.png">
-                                    <img class="" src="images/slider/slider07.png" alt="写真7">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 8" href="images/slider/slider08.png">
-                                    <img class="" src="images/slider/slider08.png" alt="写真8">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 9" href="images/slider/slider09.png">
-                                    <img class="" src="images/slider/slider09.png" alt="写真9">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 10" href="images/slider/slider10.png">
-                                    <img class="" src="images/slider/slider10.png" alt="写真10">
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a class="l-linkImg -img" data-lightbox="Makefull" data-title="Makefull 11" href="images/slider/slider11.png">
-                                    <img class="" src="images/slider/slider11.png" alt="写真11">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+
+            <!-- サムネイルエリア -->
+            <div class="swiper swiperThumbnail">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider00.png" alt="写真01"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider01.png" alt="写真02"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider02.png" alt="写真03"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider03.png" alt="写真04"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider04.png" alt="写真05"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider05.png" alt="写真06"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider06.png" alt="写真07"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider07.png" alt="写真08"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider08.png" alt="写真09"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider09.png" alt="写真10"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider10.png" alt="写真11"></div>
+                    <div class="swiper-slide"><img class="c-link -img" src="images/slider/slider11.png" alt="写真12"></div>
                 </div>
+                <!-- ページネーション -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </main>
@@ -446,67 +417,27 @@
     <!-- <script src="js/slick.min.js"></script> -->
 
     <script>
-
-        // window.addEventListener('scroll', checkScroll);
-        // スライダー
-        // var mySwiper = new Swiper('.swiper-container', {
-        //     // loop: true,
-        //     autoplay: true,
-        //     slidesPerView: 3,
-        //     slidesPerGroup: 3,
-        //     spaceBetween: 10,
-        //     keyboard: true,
-        //     speed: 3000,
-        //     pagination: {
-        //         el: '.swiper-pagination',
-        //         type: 'bullets',
-        //         clickable: true
-        //     }
-        // });
-
-        // const target = '.Makefull-slider';
-        // const options = {
-        //     type: "loop",
-        //     autoplay   : true,
-        //     interval   : 3000,
-        //     pauseOnFocus: false,
-        //     cover: true,
-        //     heightRatio: 0.5,
-        //     perPage: 5,
-        //     perMove: 1,
-        //     gap: 16,
-        //     updateOnMove: true,
-        //     padding: "5rem", //左右のスライドを5rem分表示させる
-        //     focus: "center", //アクティブなスライドを中央に表示する
-        // }
-        
-        // const mySplide = new Splide(target, options);
-        // mySplide.mount();
-
-
-        new Splide(".Makefull-slider", {
-            type: "loop",
-            autoplay   : true,
-            speed: 1000, // スライダーの移動時間
-            // autoWidth: true,
-            autoHeight :true,
-            interval   : 3000,
-            pauseOnFocus: false,
-            cover: true,
-            // heightRatio: 0.5,
-            perPage: 5,
-            perMove: 1,
-            gap: 16,
-            updateOnMove: true,
-            padding: "5rem", //左右のスライドを5rem分表示させる
-            focus: "center", //アクティブなスライドを中央に表示する
+        var thumbsSwiper = new Swiper(".swiperThumbnail", {
+            watchSlidesProgress: true,
             breakpoints: {
-                500: {
-                    perPage: 1,
+                480: {
+                    slidesPerView: 5,
+                },
+                300: {
+                    slidesPerView: 3,
                 },
             },
-        }).mount();
-
+        });
+        var mainSwiper = new Swiper(".swiperMain", {
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination', // ページネーションを表示する要素
+                clickable: true, // ページをクリック可能にする
+            },
+            thumbs: {
+                swiper: thumbsSwiper,
+            },
+        });
     </script>
 
         <!-- <script src="js/animation.js"></script> -->
