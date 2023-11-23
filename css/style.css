@@ -3207,7 +3207,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-hnav__button {
-    width: 40px;
+    width: 35px;
   }
 }
 .c-hnav__button span,
