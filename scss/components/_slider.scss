@@ -80,9 +80,10 @@
             }
             &-bullet{
                 border-radius: 4px;
+                transform: scaleX(1);
                 transition: .5s all;
                 @include min(768){
-                    border-radius:0;
+                    border-radius:1px;
                 }
                 span{
                     display: inline-block;

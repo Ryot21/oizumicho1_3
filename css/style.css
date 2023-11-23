@@ -3429,7 +3429,7 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-title {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 30%;
     width: 40%;
   }
@@ -3454,7 +3454,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-des {
-    top: 75%;
+    top: 80%;
     left: 28%;
     width: 30%;
   }
@@ -3670,10 +3670,19 @@ button.swiper-pagination-bullet {
 .c-flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media (width >= 768px) {
   .c-flex {
     flex-wrap: nowrap;
+  }
+}
+.c-flex li {
+  width: 100%;
+}
+@media (width >= 768px) {
+  .c-flex li {
+    width: 48%;
   }
 }
 @media (width >= 768px) {
@@ -3689,7 +3698,11 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-flex.-p01 li {
-    width: 49%;
+    width: 45%;
+    padding: 0 2.5%;
+  }
+  .c-flex.-p01 li:nth-child(2) {
+    width: 55%;
   }
 }
 .c-flex.-p02 {
@@ -3971,11 +3984,12 @@ a {
 }
 .swiper.swiperThumbnail .swiper-pagination-bullet {
   border-radius: 4px;
+  transform: scaleX(1);
   transition: 0.5s all;
 }
 @media (width >= 768px) {
   .swiper.swiperThumbnail .swiper-pagination-bullet {
-    border-radius: 0;
+    border-radius: 1px;
   }
 }
 .swiper.swiperThumbnail .swiper-pagination-bullet span {

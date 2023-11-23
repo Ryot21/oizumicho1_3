@@ -2,8 +2,15 @@
 .c-flex{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	@include min(768){
 		flex-wrap: nowrap;
+	}
+	li{
+		width: 100%;
+		@include min(768){
+			width: 48%;
+		}
 	}
 	// 反転
 	&.-reverse{
@@ -16,7 +23,11 @@
 		li{
 			width: 100%;
 			@include min(768){
-				width: 49%;
+				width: 45%;
+				padding: 0 2.5%;
+				&:nth-child(2){
+					width: 55%;
+				}
 			}
 		}
 	}
