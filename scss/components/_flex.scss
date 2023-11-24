@@ -76,11 +76,33 @@
 
 	&.-column4{
 		flex-wrap: wrap !important;
-		justify-content: space-between;
+		justify-content: start;
 		li{
-			width: 50%;
+			position: relative;
+			@include max(768){
+				width: calc(50% - 5px);
+				&:nth-child(odd){
+					margin-right: 5px;
+				}
+				&:nth-child(even){
+					margin-left: 5px;
+
+				}
+			}
 			@include min(768){
-				width: 25%;
+				width: calc(33.3333% - 20px);
+				margin: 10px;
+			}
+			@include min(1200){
+				width: calc(25% - 20px);
+				margin: 10px;
+			}
+
+			.caution-text{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				color: $main-color--Dgray;
 			}
 		}
 	}

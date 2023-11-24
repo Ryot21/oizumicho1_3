@@ -1,0 +1,46 @@
+@keyframes ZoomIn{
+    0% {
+        transform: scale(1.01);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: .95;
+    }
+}
+@keyframes ZoomOut{
+    0% {
+        transform: scale(1.1);
+        opacity: .95;
+    }
+    100% {
+        transform: scale(1.01);
+        opacity: 1;
+    }
+}
+
+
+.a-moveImg{
+    .imgBox{
+        background: black;
+        overflow: hidden;
+        transition: 3s all;
+        img{
+            transform: scale(1.01);
+            animation-name: ZoomOut;
+            animation-fill-mode:forwards;
+            animation-duration:1s;
+        }
+    }
+    &:hover{
+        transition: 1s all;
+        .imgBox{
+            img{
+                animation-name: ZoomIn;
+                animation-fill-mode:forwards;
+                animation-duration:.5s;
+            }
+        }
+    }
+
+}

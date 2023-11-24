@@ -2,10 +2,7 @@
 .c-footer{
 	width: 100vw;
 	height: auto;
-	margin-bottom: 25%;
-	@include min(768){
-		margin-bottom: 5%;
-	}
+
 	&-wrapper{
 		align-items: center;
 		width: 76%;

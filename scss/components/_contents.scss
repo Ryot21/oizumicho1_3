@@ -68,27 +68,21 @@
 			&.-f-title{
 				position: absolute;
 				top: 32%;
-				left: 48%;
-				transform: translate(-50%, -50%);
+				left: 8%;
 				width: 82%;
 				@include min(768){
-					position: absolute;
 					top: 70%;
-					left: 30%;
+					left: 10%;
 					width: 40%;
 				}
 			}
 			// サブタイトル
 			&.-f-subtitle{
 				position: absolute;
-				// top: 35%;
-				// left: 50%;
-				transform: translate(-50%, -50%);
-				// width: 75%;
 
 				@include min(768){
-					top: 18%;
-					left: 75%;
+					top: 2%;
+					left: 64%;
 					width: 26%;
 				}
 			}
@@ -96,12 +90,11 @@
 			&.-f-des{
 				position: absolute;
 				top: 37.5%;
-				left: 48%;
-				transform: translate(-50%, -50%);
+				left: 14%;
 				width: 69%;
 				@include min(768){
 					top: 80%;
-					left: 28%;
+					left: 13.1%;
 					width: 30%;
 				}
 			}
@@ -163,7 +156,7 @@
 			}
 			// 間取り > des
 			&.-m-des{
-				top: 16%;
+				top: 18%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 89%;
@@ -221,7 +214,7 @@
 			width: 10%;
 		}
 		@include min(1600){
-			width: 7%;
+			width: 12%;
 		}
 		&.-c-In{
 			width: auto;
