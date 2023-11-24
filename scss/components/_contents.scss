@@ -167,6 +167,17 @@
 				}
 			}
 		}
+
+		// 無限コンテンツ
+		&.-mugenArea{
+			width: 20%;
+			margin: auto;
+			overflow: hidden;
+
+			.c-contentsBox{
+				width: 102%;
+			}
+		}
 	}
 
 	&.w1100{

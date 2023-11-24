@@ -3501,6 +3501,14 @@ button.swiper-pagination-bullet {
     width: auto;
   }
 }
+.c-contents.-imgBg.-mugenArea {
+  width: 20%;
+  margin: auto;
+  overflow: hidden;
+}
+.c-contents.-imgBg.-mugenArea .c-contentsBox {
+  width: 102%;
+}
 @media (width >= 768px) {
   .c-contents.w1100 {
     width: 80%;
@@ -4242,6 +4250,21 @@ a {
 }
 .bg-color-text {
   animation: bg-color-text 5s infinite;
+}
+
+@keyframes mugen-bg {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.mugen-bg-move {
+  animation: mugen-bg 25s infinite;
 }
 
 @keyframes scroll-fade {
