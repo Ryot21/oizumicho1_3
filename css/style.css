@@ -3420,7 +3420,7 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view .c-contentsBox.-f-title {
   position: absolute;
-  top: 32%;
+  top: 30%;
   left: 8%;
   width: 82%;
 }
@@ -3443,7 +3443,7 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view .c-contentsBox.-f-des {
   position: absolute;
-  top: 37.5%;
+  top: 36.5%;
   left: 14%;
   width: 69%;
 }
