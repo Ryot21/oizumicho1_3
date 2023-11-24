@@ -3389,7 +3389,7 @@ button.swiper-pagination-bullet {
 @media (768px >= width) {
   .c-contents.-f-view .c-contentsBox.-f-gallery._row01 {
     position: absolute;
-    top: 0%;
+    top: 3%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -3400,9 +3400,9 @@ button.swiper-pagination-bullet {
   .c-contents.-f-view .c-contentsBox.-f-gallery._row02 {
     position: absolute;
     top: auto;
-    bottom: 0%;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 100%;
     columns: 2; /*段組みの数*/
   }
@@ -3420,7 +3420,7 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view .c-contentsBox.-f-title {
   position: absolute;
-  top: 30%;
+  top: 36%;
   left: 8%;
   width: 82%;
 }
@@ -3443,7 +3443,7 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view .c-contentsBox.-f-des {
   position: absolute;
-  top: 36.5%;
+  top: 41.5%;
   left: 14%;
   width: 69%;
 }

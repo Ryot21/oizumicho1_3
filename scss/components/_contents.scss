@@ -30,7 +30,7 @@
 				&._row01{
 					@include max(768){
 						position: absolute;
-						top: 0%;
+						top: 3%;
 						left: 50%;
 						transform: translateX(-50%);
 						width: 100%;
@@ -41,9 +41,9 @@
 					@include max(768){
 						position: absolute;
 						top: auto;
-						bottom: 0%;
+						bottom: 10%;
 						left: 50%;
-						transform: translate(-50%, -50%);
+						transform: translateX(-50%);
 						width: 100%;
 						columns: 2;/*段組みの数*/
 					}
@@ -67,7 +67,7 @@
 			// タイトル
 			&.-f-title{
 				position: absolute;
-				top: 30%;
+				top: 36%;
 				left: 8%;
 				width: 82%;
 				@include min(768){
@@ -89,7 +89,7 @@
 			// description
 			&.-f-des{
 				position: absolute;
-				top: 36.5%;
+				top: 41.5%;
 				left: 14%;
 				width: 69%;
 				@include min(768){
