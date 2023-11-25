@@ -1,6 +1,12 @@
 // リンク関係（aタグ）
 
 .c-link{
+	&.-nav{
+		display: block;
+		width: auto;
+		transition: all 0.5s;
+		&:hover{ transform: scale(1.05); }
+	}
 	&.-contact{
 		display: block;
 		width: auto;
