@@ -3682,6 +3682,26 @@ button.swiper-pagination-bullet {
     height: auto;
   }
 }
+.c-contents.-f-view .c-contentsBox.-r-logo {
+  position: absolute;
+}
+@media (width >= 768px) {
+  .c-contents.-f-view .c-contentsBox.-r-logo {
+    top: 5%;
+    left: 75%;
+    width: 20%;
+  }
+}
+.c-contents.-f-view .c-contentsBox.-r-title {
+  position: absolute;
+}
+@media (width >= 768px) {
+  .c-contents.-f-view .c-contentsBox.-r-title {
+    top: 49%;
+    left: 67%;
+    width: 24%;
+  }
+}
 .c-contents.-imgBg .c-contentsBox {
   position: absolute;
 }

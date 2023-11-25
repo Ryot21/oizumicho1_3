@@ -120,6 +120,25 @@
 
 				}
 			}
+
+						// ロゴ
+						&.-r-logo{
+							position: absolute;
+							@include min(768){
+								top: 5%;
+								left: 75%;
+								width: 20%;
+							}
+						}
+						// タイトル
+						&.-r-title{
+							position: absolute;
+							@include min(768){
+								top: 49%;
+								left: 67%;
+								width: 24%;
+							}
+						}
 		}
 	}
 	&.-slider{//カルーセル
