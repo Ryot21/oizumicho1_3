@@ -148,6 +148,21 @@
 				}
 			}
 		}
+		&_r-pic{
+			justify-content: space-between;
+			li{
+				width: 100%;
+				@include min(768){
+					&:nth-child(1){
+						width: 43%;
+						padding-right: 4%;
+					}
+					&:nth-child(2){
+						width: 57%;
+					}
+				}
+			}
+		}
 	}
 
 	&.-column4{
