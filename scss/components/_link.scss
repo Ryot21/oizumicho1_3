@@ -69,6 +69,15 @@
 			@include min(1600){
 				width: 50%;
 			}
+			&.-p01{
+				width: 100%;
+				@include min(768){
+					width: 80%;
+				}
+				@include min(1600){
+					width: 100%;
+				}
+			}
 			p{
 				position: relative;
 				transition: 1s;

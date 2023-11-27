@@ -255,9 +255,9 @@
 	// ロゴ関係
 	.logoArea{
 		margin: auto;
-		width: 20%;
+		width: 32%;
 		@include min(768){
-			width: 10%;
+			width: 16%;
 		}
 		@include min(1600){
 			width: 12%;

@@ -3859,11 +3859,11 @@ button.swiper-pagination-bullet {
 
 .logoArea {
   margin: auto;
-  width: 20%;
+  width: 32%;
 }
 @media (width >= 768px) {
   .logoArea {
-    width: 10%;
+    width: 16%;
   }
 }
 @media (width >= 1600px) {
@@ -4420,6 +4420,19 @@ a {
 @media (width >= 1600px) {
   .c-link.-text .textBox {
     width: 50%;
+  }
+}
+.c-link.-text .textBox.-p01 {
+  width: 100%;
+}
+@media (width >= 768px) {
+  .c-link.-text .textBox.-p01 {
+    width: 80%;
+  }
+}
+@media (width >= 1600px) {
+  .c-link.-text .textBox.-p01 {
+    width: 100%;
   }
 }
 .c-link.-text .textBox p {
