@@ -160,7 +160,23 @@
 				width: 25%;
 				filter: drop-shadow(2px 2px 2px gray);
 			}
-
+			// リサーチページ
+			&.-cross{
+				width: 10%;
+				@include min(768){
+					width: 10%;
+				}
+				&.-item01{
+					@include max(768){
+						top: 22%;
+					}
+				}
+				&.-item02{
+					@include max(768){
+						top: 78.5%;
+					}
+				}
+			}
 
 			// 間取り > 号棟
 			&.-m-goutou{

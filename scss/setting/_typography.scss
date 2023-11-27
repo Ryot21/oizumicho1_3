@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6,p,a,span{
     }
     // 色
     &.-color01{color: $site-color01;}
-
+    &.-color_pink{color: $site-color_pink;}
 }
 
 // 大きさ
@@ -60,13 +60,13 @@ p,a,span{
         &.s-S{
             font-size: 12px;
             @include min(768){
-                font-size: clamp(12px, 1vw, 16px);
+                font-size: clamp(12px, 1.5vw, 16px);
             }
         }
         &.s-M{
             font-size: 14px;
             @include min(768){
-                font-size: clamp(12px, 1.2vw, 20px);
+                font-size: clamp(12px, 1.2vw, 18px);
             }
         }
         &.s-L{
@@ -83,7 +83,7 @@ p,a,span{
         &.s-LL{
             font-size: 18px;
             @include min(768){
-                font-size: clamp(10px, 2.5vw, 28px);
+                font-size: clamp(18px, 3vw, 34px);
             }
         }
         &.s-3L{
@@ -101,6 +101,12 @@ p,a,span{
             font-size: 16px;
             @include min(768){
                 font-size: clamp(16px, 2.8vw, 53px);
+            }
+        }
+        &.s-profile{
+            font-size: 12px;
+            @include min(768){
+                font-size: clamp(12px, 2.8vw, 14px);
             }
         }
 }

@@ -18,6 +18,11 @@
 			flex-direction: row-reverse;
 		}
 	}
+	&.-spa-b{
+		@include min(768){
+			justify-content: space-between !important;
+		}
+	}
 	&.-p01{
 		justify-content: space-between;
 		li{
@@ -53,22 +58,93 @@
 					width: 80%;
 					margin-right: 0;
 					margin-left: auto;
-					// filter: drop-shadow(5px 5px 2px $main-color--beige);
-					&::before{
-						// content: "";
-						// position: absolute;
-						// top: 5px;
-						// left: 5px;
-						// width: 100%;
-						// height: 100%;
-						// background: $main-color--beige;
-					}
 				}
 			}
 			@include min(768){
 				width: 60%;
 				&:nth-child(2){
 					width: 40%;
+				}
+			}
+		}
+	}
+	&.-p03{
+		justify-content: space-between;
+		li{
+			@include max(768){
+				width: 100%;
+			}
+			@include min(768){
+				width: 40%;
+				&:nth-child(2){
+					width: 60%;
+				}
+			}
+		}
+	}
+
+	&.-column2{
+		flex-wrap: wrap !important;
+		justify-content: start;
+		li{
+			position: relative;
+			@include max(768){
+				width: 100%;
+			}
+			@include min(768){
+				width: calc(50% - 5px);
+				&:nth-child(odd){
+					margin-right: 5px;
+				}
+				&:nth-child(even){
+					margin-left: 5px;
+
+				}
+			}
+		}
+		&_1{
+			flex-wrap: wrap !important;
+			justify-content: start;
+			li{
+				position: relative;
+				@include max(768){
+					width: 100%;
+				}
+				@include min(768){
+					width: calc(50% - 10px);
+					&:nth-child(odd){
+						margin-right: 10px;
+					}
+					&:nth-child(even){
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+		&_2{
+			flex-wrap: nowrap !important;
+			justify-content: start;
+			li{
+				position: relative;
+				@include max(768){
+					&:nth-child(odd){
+						width: calc(55% - 5px) !important;
+						margin-right: 5px;
+					}
+					&:nth-child(even){
+						width: calc(45% - 5px) !important;
+						margin-right: 5px;
+					}
+				}
+				@include min(768){
+					&:nth-child(odd){
+						width: calc(55% - 5px) !important;
+						margin-right: 5px;
+					}
+					&:nth-child(even){
+						width: calc(45% - 5px) !important;
+						margin-right: 5px;
+					}
 				}
 			}
 		}
