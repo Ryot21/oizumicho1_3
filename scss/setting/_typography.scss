@@ -52,6 +52,10 @@ h1,h2,h3,h4,h5,h6,p,a,span{
     // 色
     &.-color01{color: $site-color01;}
     &.-color_pink{color: $site-color_pink;}
+    &.-house_c01{color: $house-color01;}
+    &.-house_c02{color: $house-color02;}
+    &.-house_c03{color: $house-color03;}
+    &.-house_c04{color: $house-color04;}
 }
 
 // 大きさ
@@ -114,6 +118,7 @@ p,a,span{
 
 // ナビゲーション
 p, span, a {
+    &.Top,
     &.concept,
     &.plan,
     &.Grallery,
@@ -142,6 +147,7 @@ p, span, a {
         }
     }
     // 位置
+    &.Top,
     &.concept,
     &.plan,
     &.Grallery,
@@ -186,6 +192,24 @@ p, span, a {
     }
 
     // ボーダー&テキスト
+    &.Top{
+        &::before{
+            @include min(768){
+                background: $main-color--b;
+                width: 50%;
+            }
+            @include min(1000){
+                width: 45%;
+            }
+            @include min(1400){
+                width: 57%;
+            }
+            @include min(1600){
+                width: 58%;
+            }
+        }
+        &::after{ content: "トップ"; }
+    }
     &.concept{
         &::before{
             @include min(768){

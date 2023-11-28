@@ -196,5 +196,27 @@
 				color: $main-color--Dgray;
 			}
 		}
+		&_contactBox{
+			flex-wrap: wrap !important;
+			justify-content: start;
+			li{
+				width: 50%;
+				@include min(768){
+					width: 25%;
+				}
+				&:nth-child(1){
+					background: $contact-item-1;
+				}
+				&:nth-child(2){
+					background: $contact-item-2;
+				}
+				&:nth-child(3){
+					background: $contact-item-3;
+				}
+				&:nth-child(4){
+					background: $contact-item-4;
+				}
+			}
+		}
 	}
 }

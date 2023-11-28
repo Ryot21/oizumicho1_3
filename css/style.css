@@ -137,6 +137,18 @@ h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.
 h1.-color_pink, h2.-color_pink, h3.-color_pink, h4.-color_pink, h5.-color_pink, h6.-color_pink, p.-color_pink, a.-color_pink, span.-color_pink {
   color: #e8558e;
 }
+h1.-house_c01, h2.-house_c01, h3.-house_c01, h4.-house_c01, h5.-house_c01, h6.-house_c01, p.-house_c01, a.-house_c01, span.-house_c01 {
+  color: #b6b343;
+}
+h1.-house_c02, h2.-house_c02, h3.-house_c02, h4.-house_c02, h5.-house_c02, h6.-house_c02, p.-house_c02, a.-house_c02, span.-house_c02 {
+  color: #6d5847;
+}
+h1.-house_c03, h2.-house_c03, h3.-house_c03, h4.-house_c03, h5.-house_c03, h6.-house_c03, p.-house_c03, a.-house_c03, span.-house_c03 {
+  color: #599465;
+}
+h1.-house_c04, h2.-house_c04, h3.-house_c04, h4.-house_c04, h5.-house_c04, h6.-house_c04, p.-house_c04, a.-house_c04, span.-house_c04 {
+  color: #00c5d5;
+}
 
 p.s-SS, a.s-SS, span.s-SS {
   font-size: 10px;
@@ -205,16 +217,16 @@ p.s-profile, a.s-profile, span.s-profile {
   }
 }
 
-p.concept, p.plan, p.Grallery, p.Location, p.Information, span.concept, span.plan, span.Grallery, span.Location, span.Information, a.concept, a.plan, a.Grallery, a.Location, a.Information {
+p.Top, p.concept, p.plan, p.Grallery, p.Location, p.Information, span.Top, span.concept, span.plan, span.Grallery, span.Location, span.Information, a.Top, a.concept, a.plan, a.Grallery, a.Location, a.Information {
   position: relative;
 }
-p.concept::before, p.plan::before, p.Grallery::before, p.Location::before, p.Information::before, span.concept::before, span.plan::before, span.Grallery::before, span.Location::before, span.Information::before, a.concept::before, a.plan::before, a.Grallery::before, a.Location::before, a.Information::before {
+p.Top::before, p.concept::before, p.plan::before, p.Grallery::before, p.Location::before, p.Information::before, span.Top::before, span.concept::before, span.plan::before, span.Grallery::before, span.Location::before, span.Information::before, a.Top::before, a.concept::before, a.plan::before, a.Grallery::before, a.Location::before, a.Information::before {
   content: "";
   position: absolute;
   bottom: 0;
   height: 1px;
 }
-p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
+p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
   position: absolute;
   bottom: 11%;
   font-size: 10px;
@@ -222,41 +234,41 @@ p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Informa
   font-style: normal;
 }
 @media (width >= 768px) {
-  p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
     font-size: 14px;
     bottom: 0%;
   }
 }
 @media (width >= 1000px) {
-  p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
     bottom: 11%;
   }
 }
-p.concept::before, p.plan::before, p.Grallery::before, p.Location::before, span.concept::before, span.plan::before, span.Grallery::before, span.Location::before, a.concept::before, a.plan::before, a.Grallery::before, a.Location::before {
+p.Top::before, p.concept::before, p.plan::before, p.Grallery::before, p.Location::before, span.Top::before, span.concept::before, span.plan::before, span.Grallery::before, span.Location::before, a.Top::before, a.concept::before, a.plan::before, a.Grallery::before, a.Location::before {
   left: 0;
 }
 @media (425px >= width) {
-  p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
     bottom: -60%;
   }
 }
 @media (768px >= width) {
-  p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
     left: 0%;
   }
 }
 @media (width >= 768px) {
-  p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
     left: 30%;
   }
 }
 @media (width >= 1000px) {
-  p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
     left: 30%;
   }
 }
 @media (width >= 1400px) {
-  p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
     left: 42%;
   }
 }
@@ -284,6 +296,30 @@ p.concept::before, p.plan::before, p.Grallery::before, p.Location::before, span.
   p.Information::after, span.Information::after, a.Information::after {
     left: 50%;
   }
+}
+@media (width >= 768px) {
+  p.Top::before, span.Top::before, a.Top::before {
+    background: #333333;
+    width: 50%;
+  }
+}
+@media (width >= 1000px) {
+  p.Top::before, span.Top::before, a.Top::before {
+    width: 45%;
+  }
+}
+@media (width >= 1400px) {
+  p.Top::before, span.Top::before, a.Top::before {
+    width: 57%;
+  }
+}
+@media (width >= 1600px) {
+  p.Top::before, span.Top::before, a.Top::before {
+    width: 58%;
+  }
+}
+p.Top::after, span.Top::after, a.Top::after {
+  content: "トップ";
 }
 @media (width >= 768px) {
   p.concept::before, span.concept::before, a.concept::before {
@@ -3863,7 +3899,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .logoArea {
-    width: 16%;
+    width: 18%;
   }
 }
 @media (width >= 1600px) {
@@ -4199,6 +4235,30 @@ button.swiper-pagination-bullet {
   bottom: 0;
   left: 0;
   color: #636363;
+}
+.c-flex.-column4_contactBox {
+  flex-wrap: wrap !important;
+  justify-content: start;
+}
+.c-flex.-column4_contactBox li {
+  width: 50%;
+}
+@media (width >= 768px) {
+  .c-flex.-column4_contactBox li {
+    width: 25%;
+  }
+}
+.c-flex.-column4_contactBox li:nth-child(1) {
+  background: #333333;
+}
+.c-flex.-column4_contactBox li:nth-child(2) {
+  background: rgba(51, 51, 51, 0.6431372549);
+}
+.c-flex.-column4_contactBox li:nth-child(3) {
+  background: rgba(51, 51, 51, 0.3568627451);
+}
+.c-flex.-column4_contactBox li:nth-child(4) {
+  background: rgba(51, 51, 51, 0.2666666667);
 }
 
 html {
@@ -4780,7 +4840,7 @@ a {
   }
 }
 .mugen-bg-move {
-  animation: mugen-bg 15s infinite;
+  animation: mugen-bg 10s infinite;
 }
 
 @keyframes scroll-fade {
