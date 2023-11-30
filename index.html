@@ -259,6 +259,30 @@
                 <li class="a-fadeUp -item02"><img src="images/SVG/e-item02.svg" alt=""></li>
                 <li class="a-fadeUp -item03"><img src="images/SVG/e-item03.svg" alt=""></li>
             </ul>
+            <!-- タップ＆拡大 -->
+            <div class="pc c-contentsBox -m-item_modal01">
+                <label class="popup popup-open" for="popup-madori01"></label>
+            </div>
+            <!-- 固定エリア > ポップアップ -->
+                    <!-- 02.間取図 -->
+                    <input type="checkbox" id="popup-madori01" >
+                    <label class="popup-overlay" for="popup-madori01"></label>
+                    <div class="popup-window -madoriImg">
+                        <!-- 閉じるボタン -->
+                        <label class="popup-close" for="popup-madori01">
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                            </svg>
+                        </label>
+                        <!-- 画像 -->
+                        <div class="popup-img">
+                            <img src="images/item/madori-item01.png" alt="">
+                        </div>
+                    </div>
+
+    <!-- //固定アイテム -->
+
         </div>
         <!-- プラン > 提案エリア -->
         <div class="c-contents w1100 w90s pdt5 mgb3 mgb15s">
@@ -631,20 +655,21 @@
     </footer>
     <!-- //footer -->
 
-    <!-- 固定エリア > ポップアップa > 物件概要 -->
-    <input type="checkbox" id="popup" >
-    <label class="popup-overlay" for="popup"></label>
-    <div class="popup-window">
-        <!-- 閉じるボタン -->
-        <label class="popup-close" for="popup">
-            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-            </svg>
-        </label>
-        <!-- iframe -->
-        <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712850411"></iframe>
-    </div>
+    <!-- 固定エリア > ポップアップ -->
+                <!-- 01.物件概要 -->
+                <input type="checkbox" id="popup" >
+                <label class="popup-overlay" for="popup"></label>
+                <div class="popup-window">
+                    <!-- 閉じるボタン -->
+                    <label class="popup-close" for="popup">
+                        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                            <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                        </svg>
+                    </label>
+                    <!-- iframe -->
+                    <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712850411"></iframe>
+                </div>
     <!-- //固定アイテム -->
     <script>
         var thumbsSwiper = new Swiper(".swiperThumbnail", {

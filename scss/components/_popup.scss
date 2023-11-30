@@ -1,5 +1,6 @@
 
-#popup {
+#popup,
+#popup-madori01 {
     display: none;
     &:checked ~ .popup-overlay {
         background-color: #00000070;
@@ -15,7 +16,10 @@
 
 .popup{
     &-open {
+        display: block;
         cursor: pointer;
+        width: 100%;
+        height: 100%;
     }
     &-overlay {
         position: fixed;
@@ -46,6 +50,9 @@
         #inlineFrame{
             width: 100%;
             height: 100%;
+        }
+        &.-madoriImg {
+            height: auto;
         }
     }
     &-close {

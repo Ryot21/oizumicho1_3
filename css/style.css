@@ -3882,6 +3882,15 @@ button.swiper-pagination-bullet {
     width: auto;
   }
 }
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-m-item_modal01 {
+    top: 73%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    width: 73%;
+    height: 55%;
+  }
+}
 .c-contents.-imgBg.-mugenArea {
   width: 20%;
   margin: auto;
@@ -4680,22 +4689,28 @@ a {
   }
 }
 
-#popup {
+#popup,
+#popup-madori01 {
   display: none;
 }
-#popup:checked ~ .popup-overlay {
+#popup:checked ~ .popup-overlay,
+#popup-madori01:checked ~ .popup-overlay {
   background-color: rgba(0, 0, 0, 0.4392156863);
   z-index: 99998;
   opacity: 1;
 }
-#popup:checked ~ .popup-window {
+#popup:checked ~ .popup-window,
+#popup-madori01:checked ~ .popup-window {
   background-color: #ffffff;
   z-index: 99999;
   opacity: 1;
 }
 
 .popup-open {
+  display: block;
   cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 .popup-overlay {
   position: fixed;
@@ -4726,6 +4741,9 @@ a {
 .popup-window #inlineFrame {
   width: 100%;
   height: 100%;
+}
+.popup-window.-madoriImg {
+  height: auto;
 }
 .popup-close {
   cursor: pointer;

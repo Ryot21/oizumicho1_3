@@ -219,6 +219,19 @@
 					width: auto;
 				}
 			}
+						// 間取り > タップ関係
+						&.-m-item{
+							&_modal01{
+								// background-color: rgba(0, 0, 0, 0.4235294118);
+								@include min(768){
+									top: 73%;
+									left: 61%;
+									transform: translate(-50%, -50%);
+									width: 73%;
+									height: 55%;
+								}
+							}
+						}
 		}
 
 		// 無限コンテンツ
