@@ -3805,6 +3805,18 @@ button.swiper-pagination-bullet {
   width: 25%;
   filter: drop-shadow(2px 2px 2px gray);
 }
+.c-contents.-imgBg .c-contentsBox.-icon {
+  top: 2.2%;
+  right: 3%;
+  width: 50%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-icon {
+    top: 10%;
+    right: 0;
+    width: 30%;
+  }
+}
 .c-contents.-imgBg .c-contentsBox.-cross {
   width: 8%;
 }
@@ -4111,6 +4123,10 @@ button.swiper-pagination-bullet {
   .c-flex.-p03 li:nth-child(2) {
     width: 60%;
   }
+}
+.c-flex.-f-icon li {
+  width: calc(33.3333% - 10px);
+  margin: 0 5px;
 }
 .c-flex.-column2 {
   flex-wrap: wrap !important;

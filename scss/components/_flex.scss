@@ -82,6 +82,12 @@
 			}
 		}
 	}
+	&.-f-icon{
+		li{
+			width: calc(33.3333% - 10px);
+			margin: 0 5px;
+		}
+	}
 
 	&.-column2{
 		flex-wrap: wrap !important;

@@ -160,6 +160,16 @@
 				width: 25%;
 				filter: drop-shadow(2px 2px 2px gray);
 			}
+			&.-icon{
+				top: 2.2%;
+				right: 3%;
+				width: 50%;
+				@include min(768){
+					top: 10%;
+					right: 0;
+					width: 30%;
+				}
+			}
 			// リサーチページ
 			&.-cross{
 				width: 8%;
