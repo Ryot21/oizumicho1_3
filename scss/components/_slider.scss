@@ -9,11 +9,7 @@
             text-align: end;
             opacity: .5;
             overflow: hidden;
-            
             transition: .5s all;
-            @include max(768){
-                // padding-left: 10px;
-            }
             img{
                 width: 100%;
                 height: auto;
@@ -52,7 +48,18 @@
 
         }
     }
-
+    &.swiperMain{
+        .swiper-slide{
+            @include max(768){
+                height: 80% !important;
+                max-height: 280px;
+                img{
+                    object-fit: cover;
+                    object-position: right 0 bottom 20px;
+                }
+            }
+        }
+    }
     &.swiperThumbnail{
         .swiper-slide{
             transform: scale(.8);

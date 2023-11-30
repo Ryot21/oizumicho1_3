@@ -154,11 +154,14 @@
 				width: 100%;
 			}
 			&.-number{
-				top: 0%;
+				top: 4%;
 				left: 15%;
 				transform: translate(-50%, -50%);
 				width: 25%;
 				filter: drop-shadow(2px 2px 2px gray);
+				@include min(768){
+					top: 0%;
+				}
 			}
 			&.-icon{
 				top: 2.2%;
@@ -184,6 +187,11 @@
 				&.-item02{
 					@include max(768){
 						top: 78.5%;
+					}
+				}
+				&.-item03{
+					@include max(768){
+						top: 50.5%;
 					}
 				}
 			}

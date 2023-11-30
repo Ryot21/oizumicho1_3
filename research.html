@@ -185,8 +185,8 @@
                             </ul>
                         </li>
                         <li class="mgb20 mgb20s">
-                            <ul class="c-flex -column2_2">
-                                <li class="a-fadeDown">
+                            <ul class="c-flex -column2_2 -s-reverse">
+                                <li class="a-fadeDown mgl2s">
                                     <p class="-left mgb3 mgb3s">
                                         <span class="s-L -f-gothic pdr2">宇野 健一</span>
                                         <span class="s-M -f-acumin">Kenichi Uno</span>
@@ -222,8 +222,8 @@
                             </ul>
                         </li>
                         <li class="">
-                            <ul class="c-flex -column2_2">
-                                <li class="a-fadeDown">
+                            <ul class="c-flex -column2_2  -s-reverse">
+                                <li class="a-fadeDown mgl2s">
                                     <p class="-left mgb3 mgb3s">
                                         <span class="s-L -f-gothic pdr2">田代 紀昭</span>
                                         <span class="s-M -f-acumin">Noriaki Tashiro</span>
@@ -241,7 +241,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="c-contentsBox -center -cross"><img class="" src="images/item/cross.png" alt="×"></div>
+                <div class="c-contentsBox -center -cross -item03"><img class="" src="images/item/cross.png" alt="×"></div>
                 <div class="sp c-contentsBox -center -cross -item01"><img class="" src="images/item/cross.png" alt="×"></div>
                 <div class="sp c-contentsBox -center -cross -item02"><img class="" src="images/item/cross.png" alt="×"></div>
             </div>
@@ -375,14 +375,24 @@
         </div>
         <!-- ポップアップa > 物件概要 -->
         <div class="c-contents logoArea mgb10 mgb10s a-sc-fade">
-            <a class="c-link -text" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712850411">
+            <!-- <a class="c-link -text" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712850411">
                 <div class="logoBox mgb20 mgb20s">
                     <img src="images/SVG/logo_text.svg" alt="Makefull">
                 </div>
                 <div class="textBox -p01">
                     <p class="s-M mgb3 mgb3s">詳しい研究成果はコチラ</p>
                 </div>
-            </a>
+            </a> -->
+            <label class="popup popup-open" for="popup">
+                <div class="c-link -text">
+                    <div class="logoBox mgb20 mgb20s">
+                        <img src="images/SVG/logo_text.svg" alt="Makefull">
+                    </div>
+                    <div class="textBox -p01">
+                        <p class="s-M mgb3 mgb3s">詳しい研究成果はコチラ</p>
+                    </div>
+                </div>
+            </label>
         </div>
         <!-- contact*4 -->
         <div class="c-contents w1100 w85s">
@@ -404,7 +414,7 @@
     </main>
     <!-- //コンテンツ -->
     <!-- footer -->
-    <footer id="footer" class="c-footer mgb3 mgb7s">
+    <footer id="footer" class="c-footer mgb3 mgb25s">
         <div class="c-footer__shopArea mgb1 mgb1s">
             <ul class="c-footer__shopFlex">
                 <li><a href=""><img src="images/logo/SVG/higashikurume-shop.svg" alt="住協 東久留米支店 情報"></a></li>
@@ -416,18 +426,18 @@
     <!-- //footer -->
 
     <!-- 固定エリア > ポップアップa > 物件概要 -->
-    <input type="checkbox" id="popup">
-    <div class="popup-overlay">
-        <div class="popup-window">
-            <!-- iframe -->
-            <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712850411"></iframe>
-            <label class="popup-close" for="popup">
-                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                    <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                </svg>
-            </label>
-        </div>
+    <input type="checkbox" id="popup" >
+    <label class="popup-overlay" for="popup"></label>
+    <div class="popup-window">
+        <!-- 閉じるボタン -->
+        <label class="popup-close" for="popup">
+            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+            </svg>
+        </label>
+        <!-- iframe -->
+        <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712850411"></iframe>
     </div>
     <!-- //固定アイテム -->
     <script>

@@ -687,6 +687,12 @@ p.Information::after, span.Information::after, a.Information::after {
   margin-left: 2% !important;
 }
 
+@media (768px >= width) {
+  .mgl2s {
+    margin-left: 2% !important;
+  }
+}
+
 .mgl3 {
   margin-left: 3% !important;
 }
@@ -709,6 +715,12 @@ p.Information::after, span.Information::after, a.Information::after {
 
 .mgr2 {
   margin-right: 2% !important;
+}
+
+@media (768px >= width) {
+  .mgr2s {
+    margin-right: 2% !important;
+  }
 }
 
 .mgr3 {
@@ -3799,11 +3811,16 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 .c-contents.-imgBg .c-contentsBox.-number {
-  top: 0%;
+  top: 4%;
   left: 15%;
   transform: translate(-50%, -50%);
   width: 25%;
   filter: drop-shadow(2px 2px 2px gray);
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-number {
+    top: 0%;
+  }
 }
 .c-contents.-imgBg .c-contentsBox.-icon {
   top: 2.2%;
@@ -3833,6 +3850,11 @@ button.swiper-pagination-bullet {
 @media (768px >= width) {
   .c-contents.-imgBg .c-contentsBox.-cross.-item02 {
     top: 78.5%;
+  }
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-cross.-item03 {
+    top: 50.5%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-m-goutou {
@@ -4057,6 +4079,11 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-flex.-reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (768px >= width) {
+  .c-flex.-s-reverse {
     flex-direction: row-reverse;
   }
 }
@@ -4596,6 +4623,16 @@ a {
   transform: scale(1.05);
   opacity: 1;
 }
+@media (768px >= width) {
+  .swiper.swiperMain .swiper-slide {
+    height: 80% !important;
+    max-height: 280px;
+  }
+  .swiper.swiperMain .swiper-slide img {
+    object-fit: cover;
+    object-position: right 0 bottom 20px;
+  }
+}
 .swiper.swiperThumbnail .swiper-slide {
   transform: scale(0.8);
 }
@@ -4644,58 +4681,64 @@ a {
 }
 
 #popup {
-  display: none; /* label でコントロールするので input は非表示に */
+  display: none;
+}
+#popup:checked ~ .popup-overlay {
+  background-color: rgba(0, 0, 0, 0.4392156863);
+  z-index: 99998;
+  opacity: 1;
+}
+#popup:checked ~ .popup-window {
+  background-color: #ffffff;
+  z-index: 99999;
+  opacity: 1;
 }
 
 .popup-open {
-  cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+  cursor: pointer;
 }
-
 .popup-overlay {
-  display: none; /* input にチェックが入るまでは非表示に */
-}
-
-#popup:checked ~ .popup-overlay {
-  display: block;
-  z-index: 99999;
-  background-color: rgba(0, 0, 0, 0.4392156863);
   position: fixed;
-  width: 100%;
-  height: 100vh;
   top: 0;
   left: 0;
-}
-
-.popup-window {
-  width: 90vw;
-  max-width: 1280px;
-  height: 80vh;
-  padding: 20px;
+  width: 100%;
+  height: 100vh;
   background-color: #ffffff;
-  border-radius: 6px;
+  z-index: -1;
+  opacity: 0;
+  transition: 1s all;
+}
+.popup-window {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 1280px;
+  height: 80vh;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 6px;
+  transition: 0.8s all;
+  z-index: -1;
+  opacity: 0;
 }
 .popup-window #inlineFrame {
   width: 100%;
   height: 100%;
 }
-
-.popup-text {
-  margin: 0;
-}
-
-.popup-text:not(:last-of-type) {
-  margin-bottom: 1em;
-}
-
 .popup-close {
   cursor: pointer;
   position: absolute;
   top: -26px;
   right: 0;
+}
+
+.popup-text {
+  margin: 0;
+}
+.popup-text:not(:last-of-type) {
+  margin-bottom: 1em;
 }
 
 .p-top {
