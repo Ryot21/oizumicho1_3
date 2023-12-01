@@ -1,4 +1,9 @@
 
+@keyframes fadeAnime{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 @keyframes fadeUpAnime{
     from {
         opacity: 0;
